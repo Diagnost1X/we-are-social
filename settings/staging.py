@@ -1,5 +1,6 @@
+import dj_database_url
 from base import *
- 
+
 DEBUG = False
  
 DATABASES = {
@@ -17,3 +18,7 @@ STRIPE_SECRET = os.getenv('STRIPE_SECRET', 'sk_test_zuqEExSaYKO7YtDb6wfwR9z7')
 SITE_URL = 'we-are-social-diagnostix.herokuapp.com'
 PAYPAL_NOTIFY_URL = 'we-are-social-diagnostix.herokuapp.com/a-very-hard-to-guess-url/'
 PAYPAL_RECEIVER_EMAIL = 'diagnostix-sell@me.com'
+
+DATABASES = {
+    'default':dj_database_url.config('CLEARDB_DATABASE_URL')
+}
