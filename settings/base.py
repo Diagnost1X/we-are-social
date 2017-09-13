@@ -6,7 +6,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # SECURITY WARNING: Enter your own SECRET_KEY here
 SECRET_KEY = '_34saw!bco()q8$4(_5iyik-+nmr+u7jrsfywjq)guc9+j%==c'
  
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['we-are-social-diagnostix.herokuapp.com']
 SITE_ID = 2
  
 # Application definition
