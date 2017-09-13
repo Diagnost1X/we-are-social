@@ -10,6 +10,8 @@ DATABASES = {
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
+
+MIDDLEWARE_CLASSES.append('debug_toolbar.middleware.DebugToolbarMiddleware')
  
 # Stripe environment variables
 STRIPE_PUBLISHABLE = os.getenv('STRIPE_PUBLISHABLE', 'pk_test_gxhY77b3TWmXhbv9r7sJhHg7')
